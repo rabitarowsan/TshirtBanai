@@ -1,0 +1,33 @@
+.drawing-area {
+    position: absolute;
+    border: 1px solid #D3D3D3;
+    top: 20px;
+    left: 7px;
+    z-index: 10;
+    width: 448px;
+    height: 530px;
+  }
+  
+  .canvas-container {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    user-select: none;
+  }
+  
+  #tshirt-div {
+    width: 460px;
+    height: 538px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  #canvas {
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    cursor: default;
+  }

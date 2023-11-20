@@ -22,6 +22,10 @@ Route::get('pricing', function () {
     return view('pricing');
 })->name('pricing');
 
+Route::get('customize', function () {
+    return view('customize');
+})->name('customize');
+
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
 
