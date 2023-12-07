@@ -112,8 +112,8 @@ class TshirtCustomizer {
     
         // Set canvas dimensions to cover the entire design
         exportCanvas.setDimensions({
-            width: this.canvas.width,
-            height: this.canvas.height
+            width: 773,
+            height: 360
         });
     
         // Add background image
@@ -143,6 +143,11 @@ class TshirtCustomizer {
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
+
+        
+
+        // Set the data URL to the hidden input
+        $('#exported-image').val(dataUrl);
     }
     updateTshirtType() {
         const selectedType = $('#tshirt-type').val();
@@ -152,13 +157,13 @@ class TshirtCustomizer {
         // Set the image path based on the selected T-shirt type
         switch (selectedType) {
             case 'shortsleeve':
-                imagePath = '{{ asset("uploads/shortsleeve.png") }}';
+                imagePath = "{{ asset('uploads/shortsleeve.png') }}";
                 break;
             case 'fullsleeve':
-                imagePath = '{{ asset("uploads/fullsleeve.png") }}';
+                imagePath = "{{ asset('uploads/fullsleeve.png') }}";
                 break;
             case 'poloshirt':
-                imagePath = '{{ asset("uploads/poloshirt.png") }}';
+                imagePath = "{{ asset('uploads/poloshirt.png') }}";
                 break;
             // Add more cases for other T-shirt types as needed
             default:

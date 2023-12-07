@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AuthManager;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TshirtController;
+use App\Http\Controllers\ForgotPasswordManager;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +24,15 @@ Route::get('pricing', function () {
     return view('pricing');
 })->name('pricing');
 
-Route::get('customize', function () {
-    return view('customize');
-})->name('customize');
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('customize', function () {
+        return view('customize');
+    })->name('customize');
+
+    Route::post('customize', [TshirtController::class, 'store'])->name('customize.store');
+});
+
 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');

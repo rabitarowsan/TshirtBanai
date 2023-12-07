@@ -38,7 +38,7 @@
 					    <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button><h3>Need Help?</h3>
     </p>
 					    <div class='line-wh'></div>
-    					<button onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</button>
+    					<button onclick="" class='b-support' title='Forgot Password?'> <a href="{{route('forgot.password')}}">Forget Password?</a></button>
     <button onclick="" class='b-support' title='Contact Support'> Contact Support</button>
     					<div class='line-wh'></div>
               Do not have an account?
