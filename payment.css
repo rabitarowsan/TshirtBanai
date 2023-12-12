@@ -12,45 +12,49 @@ body {
     background-color: #012e17;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    border: 1px solid #92a192;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
 }
 
 .btn-pay {
     background-color: #044906;
     color: #fff;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background-color 0.3s;
 }
 
 .btn-pay:hover {
-    background-color: #45a049;
+    background-color: #368e3d;
 }
 
 .error {
     color: red;
-    font-size: 12px;
+    font-size: 14px;
 }
