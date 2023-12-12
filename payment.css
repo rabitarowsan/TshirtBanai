@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: rgba(4, 22, 4, 0.548);
+    background-color: #b0d4e3;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -9,11 +9,15 @@ body {
 }
 
 .payment-form {
-    background-color: #012e17;
+    background-color: #f0f8ff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 350px;
+}
+
+.payment-form h2 {
+    color: #333;
 }
 
 .form-group {
@@ -25,7 +29,7 @@ label {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff;
+    color: #333;
 }
 
 input {
@@ -40,7 +44,7 @@ input {
 }
 
 .btn-pay {
-    background-color: #044906;
+    background-color: #4a90e2;
     color: #fff;
     padding: 12px;
     border: none;
@@ -51,7 +55,7 @@ input {
 }
 
 .btn-pay:hover {
-    background-color: #368e3d;
+    background-color: #4169e1;
 }
 
 .error {
